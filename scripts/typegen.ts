@@ -3,7 +3,7 @@ import { builtinRules } from "eslint/use-at-your-own-risk";
 import { pluginsToRulesDTS } from "eslint-typegen/core";
 import fs from "node:fs/promises";
 
-const reduceConfigToPlugins = (config: Linter.FlatConfig | Linter.FlatConfig[]): Record<string, ESLint.Plugin> => {
+const reduceConfigToPlugins = (config: Linter.Config | Linter.Config[]): Record<string, ESLint.Plugin> => {
   if (!Array.isArray(config)) {
     return "plugins" in config && config.plugins !== undefined ? config.plugins : {};
   }
@@ -28,12 +28,12 @@ const plugins: Record<string, ESLint.Plugin> = {
   },
   "react": await import("eslint-plugin-react").then((mod) => mod.default as ESLint.Plugin),
   "react-hooks": await import("eslint-plugin-react-hooks").then((mod) => mod.default as ESLint.Plugin),
-  ...reduceConfigToPlugins(await import("eslint-plugin-perfectionist/configs/recommended-natural").then((mod) => mod.default as Linter.FlatConfig[])),
-  ...reduceConfigToPlugins(await import("eslint-plugin-n").then((mod) => mod.default.configs["flat/recommended-module"] as Linter.FlatConfig[])),
-  ...reduceConfigToPlugins(await import("@stylistic/eslint-plugin").then((mod) => mod.default.configs["all-flat"] as Linter.FlatConfig[])),
-  ...reduceConfigToPlugins(await import("typescript-eslint").then((mod) => mod.configs.recommended as Linter.FlatConfig[])),
-  ...reduceConfigToPlugins(await import("eslint-plugin-unicorn").then((mod) => mod.configs["flat/recommended"] as Linter.FlatConfig[])),
-  ...reduceConfigToPlugins(await import("eslint-plugin-svelte").then((mod) => mod.configs["flat/recommended"])),
+  ...reduceConfigToPlugins(await import("eslint-plugin-perfectionist/configs/recommended-natural").then((mod) => mod.default as Linter.Config[])),
+  ...reduceConfigToPlugins(await import("eslint-plugin-n").then((mod) => mod.default.configs["flat/recommended-module"] as Linter.Config[])),
+  ...reduceConfigToPlugins(await import("@stylistic/eslint-plugin").then((mod) => mod.default.configs["all-flat"] as Linter.Config[])),
+  ...reduceConfigToPlugins(await import("typescript-eslint").then((mod) => mod.configs.recommended as Linter.Config[])),
+  ...reduceConfigToPlugins(await import("eslint-plugin-unicorn").then((mod) => mod.configs["flat/recommended"] as Linter.Config[])),
+  ...reduceConfigToPlugins(await import("eslint-plugin-svelte").then((mod) => mod.configs["flat/recommended"] as Linter.Config[])),
 };
 
 // eslint-disable-next-line no-console
