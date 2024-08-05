@@ -1,11 +1,11 @@
-import perfectionstNatural from "eslint-plugin-perfectionist/configs/recommended-natural";
+import perfectionist from "eslint-plugin-perfectionist";
 
 import { FlatConfigItemStrict } from "../types";
 
 export default [
   {
     name: "perfectionist/recommended-natural",
-    ...perfectionstNatural,
+    ...perfectionist.configs["recommended-natural"],
   },
   {
     name: "lichthagel/perfectionist",
@@ -25,7 +25,7 @@ export default [
       "perfectionist/sort-union-types": [
         "error",
         {
-          "nullable-last": true,
+          groups: ["unknown", "nullish"],
         },
       ],
     },
