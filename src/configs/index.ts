@@ -5,5 +5,6 @@ export { default as perfectionist } from "./perfectionist";
 export { default as react } from "./react";
 export { default as stylistic } from "./stylistic";
 export { default as svelte } from "./svelte";
+export { default as tailwindcss } from "./tailwindcss";
 export { default as typescript } from "./typescript";
 export { default as unicorn } from "./unicorn";
