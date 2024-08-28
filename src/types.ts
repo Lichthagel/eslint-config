@@ -51,6 +51,13 @@ export type OptionsConfig = {
   svelte?: boolean;
 
   /**
+   * Enable TailwindCSS-specific rules.
+   *
+   * @default false
+   */
+  tailwindcss?: boolean;
+
+  /**
    * Enable TypeScript-specific rules.
    *
    * @default true
