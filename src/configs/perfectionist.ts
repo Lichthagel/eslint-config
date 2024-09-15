@@ -33,6 +33,8 @@ export default [
           ],
         },
       ],
+
+      "sort-imports": "off",
     },
   },
 ] satisfies FlatConfigItemStrict[] as FlatConfigItemStrict[];
