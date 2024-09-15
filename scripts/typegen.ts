@@ -28,7 +28,7 @@ const plugins: Record<string, ESLint.Plugin> = {
   },
   "react": await import("eslint-plugin-react").then((mod) => mod.default as ESLint.Plugin),
   "react-hooks": await import("eslint-plugin-react-hooks").then((mod) => mod.default as ESLint.Plugin),
-  ...reduceConfigToPlugins(await import("eslint-plugin-perfectionist/configs/recommended-natural").then((mod) => mod.default as Linter.Config[])),
+  ...reduceConfigToPlugins(await import("eslint-plugin-perfectionist").then((mod) => mod.default.configs["recommended-natural"] as Linter.Config[])),
   ...reduceConfigToPlugins(await import("eslint-plugin-n").then((mod) => mod.default.configs["flat/recommended-module"] as Linter.Config[])),
   ...reduceConfigToPlugins(await import("@stylistic/eslint-plugin").then((mod) => mod.default.configs["all-flat"] as Linter.Config[])),
   ...reduceConfigToPlugins(await import("typescript-eslint").then((mod) => mod.configs.recommended as Linter.Config[])),

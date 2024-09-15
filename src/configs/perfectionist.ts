@@ -1,11 +1,11 @@
-import perfectionstNatural from "eslint-plugin-perfectionist/configs/recommended-natural";
+import perfectionst from "eslint-plugin-perfectionist";
 
 import { FlatConfigItemStrict } from "../types";
 
 export default [
   {
     name: "perfectionist/recommended-natural",
-    ...perfectionstNatural,
+    ...perfectionst.configs["recommended-natural"],
   },
   {
     name: "lichthagel/perfectionist",
@@ -14,18 +14,23 @@ export default [
       "perfectionist/sort-objects": [
         "off",
         {
-          "custom-groups": {
+          customGroups: {
             id: ["id", "name", "slug"],
           },
-          "groups": ["id", "unknown"],
-          "partition-by-comment": true,
-          "partition-by-new-line": true,
+          groups: ["id", "unknown"],
+          partitionByComment: true,
+          partitionByNewLine: true,
         },
       ],
       "perfectionist/sort-union-types": [
         "error",
         {
-          "nullable-last": true,
+          groups: [
+            "named",
+            ["intersection", "union"],
+            "unknown",
+            "nullish",
+          ],
         },
       ],
     },
