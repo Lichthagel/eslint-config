@@ -33,7 +33,7 @@ const plugins: Record<string, ESLint.Plugin> = {
   ...reduceConfigToPlugins(await import("@stylistic/eslint-plugin").then((mod) => mod.default.configs["all-flat"] as Linter.Config[])),
   ...reduceConfigToPlugins(await import("typescript-eslint").then((mod) => mod.configs.recommended as Linter.Config[])),
   ...reduceConfigToPlugins(await import("eslint-plugin-unicorn").then((mod) => mod.configs["flat/recommended"] as Linter.Config[])),
-  ...reduceConfigToPlugins(await import("eslint-plugin-svelte").then((mod) => mod.configs["flat/recommended"] as Linter.Config[])),
+  ...reduceConfigToPlugins(await import("eslint-plugin-svelte").then((mod) => mod.configs["flat/recommended"])),
   ...reduceConfigToPlugins(await import("eslint-plugin-tailwindcss").then((mod) => mod.default.configs["flat/recommended"])),
 };
 
