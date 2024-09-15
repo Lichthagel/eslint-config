@@ -25,7 +25,12 @@ export default [
       "perfectionist/sort-union-types": [
         "error",
         {
-          "nullable-last": true,
+          groups: [
+            "named",
+            ["intersection", "union"],
+            "unknown",
+            "nullish",
+          ],
         },
       ],
     },
