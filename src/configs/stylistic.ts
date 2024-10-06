@@ -23,6 +23,7 @@ export default [
       // JavaScript
       "@stylistic/array-bracket-newline": ["error", { minItems: 4, multiline: true }],
       "@stylistic/array-element-newline": ["error", { minItems: 4, multiline: true }],
+      "@stylistic/curly-newline": ["error", { consistent: true }],
       "@stylistic/function-call-argument-newline": ["error", "consistent"],
       "@stylistic/function-call-spacing": ["error", "never"],
       "@stylistic/function-paren-newline": ["error", "multiline-arguments"],
