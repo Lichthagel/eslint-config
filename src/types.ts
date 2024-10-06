@@ -12,7 +12,7 @@ export type FlatConfigItemStrict = {
    * these rule configurations are only available to the matching files.
    */
   rules?: Partial<Rules>;
-} & Omit<Linter.FlatConfig, "rules">;
+} & Omit<Linter.Config, "rules">;
 
 export type OptionsConfig = {
   /**
