@@ -1,64 +1,23 @@
-# eslint-config-lichthagel
+# @lichthagel/eslint-config
 
 Collection of eslint configs I use for my projects.
 
 ## Installation
 
-`npm|yarn|pnpm i -D eslint lichthagel/eslint-config-lichthagel`
+`npm|yarn|pnpm i -D eslint lichthagel/eslint-config`
 
-This config brings along its own plugins using `@rushstack/eslint-patch`.
+## Configuration
 
-## Configurations
+```js
+// @ts-check
 
-### Base
+import lichthagel from "@lichthagel/eslint-config";
 
-Basic rules for any JavaScript project. You should prefer using "basic".
-
-```json
-{
-  "extends": ["lichthagel/base"]
-}
-```
-
-### Basic
-
-Basic rules for any JavaScript project. Base + `eslint-plugin-import`.
-
-```json
-{
-  "extends": ["lichthagel"]
-}
-```
-
-### Typescript
-
-Already includes "basic".
-
-`npm|yarn|pnpm i -D typescript @typescript-eslint/eslint-plugin @typescript-eslint/parser`
-
-```json
-{
-    "extends": ["lichthagel/typescript"],
-    "parser": "@typescript-eslint/parser",,
-    "parserOptions": {
-        "tsconfigRootDir": ".",
-        "project": ["./tsconfig.json"]
-    }
-}
-```
-
-### Node
-
-```json
-{
-  "extends": ["lichthagel/node"]
-}
-```
-
-### React
-
-```json
-{
-  "extends": ["lichthagel/react"]
-}
+/** @type {import("@lichthagel/eslint-config").FlatConfigItem[]} */
+export default [
+  ...await lichthagel({
+    ...options
+  }),
+  ...otherSettings
+];
 ```
