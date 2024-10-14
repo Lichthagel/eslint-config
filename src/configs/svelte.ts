@@ -9,8 +9,8 @@ const SVELTE_FILES = ["**/*.svelte"];
 
 const svelte = async (options: SvelteOptions = {}): Promise<FlatConfigItemStrict[]> => {
   const {
-    disableStylistic: stylistic = false,
-    withTypescript: typescript = false,
+    disableStylistic = false,
+    withTypescript = false,
   } = options;
 
   const pluginSvelte = await import("eslint-plugin-svelte").then((mod) => mod.default);
@@ -26,7 +26,7 @@ const svelte = async (options: SvelteOptions = {}): Promise<FlatConfigItemStrict
       languageOptions: {
         parserOptions: {
           extraFileExtensions: [".svelte"],
-          parser: typescript ? "@typescript-eslint/parser" : null,
+          parser: withTypescript ? "@typescript-eslint/parser" : null,
           project: true,
         },
       },
@@ -36,7 +36,7 @@ const svelte = async (options: SvelteOptions = {}): Promise<FlatConfigItemStrict
           {
             enforceScriptPresent: false,
             enforceStylePresent: false,
-            script: [typescript ? "ts" : null],
+            script: [withTypescript ? "ts" : null],
           },
         ],
         "svelte/first-attribute-linebreak": [
@@ -92,7 +92,7 @@ const svelte = async (options: SvelteOptions = {}): Promise<FlatConfigItemStrict
         "svelte/spaced-html-comment": ["error", "always"],
         "svelte/valid-each-key": "error",
         ...(
-          stylistic ?
+          disableStylistic ?
               {
                 "@stylistic/indent": "off", // superseded by svelte/indent
                 "@stylistic/no-trailing-spaces": "off", // superseded by svelte/no-trailing-spaces
