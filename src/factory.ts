@@ -25,7 +25,7 @@ const lichthagel = async (
   }
 
   if (node) {
-    config.push(...configs.node);
+    config.push(...(await configs.node()));
   }
 
   if (typescript) {
