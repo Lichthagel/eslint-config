@@ -30,13 +30,6 @@ export type OptionsConfig = {
   node?: boolean;
 
   /**
-   * Enable React-specific rules.
-   *
-   * @default false
-   */
-  react?: boolean;
-
-  /**
    * Enable stylistic rules.
    *
    * @default true
