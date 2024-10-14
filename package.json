@@ -57,6 +57,7 @@
     "@types/node": "^22.7.4",
     "eslint": "^9.11.1",
     "eslint-plugin-n": "^17.10.3",
+    "eslint-plugin-solid": "^0.14.3",
     "eslint-plugin-svelte": "^2.44.1",
     "eslint-plugin-tailwindcss": "^3.17.4",
     "eslint-typegen": "^0.3.2",
@@ -69,11 +70,15 @@
   "peerDependencies": {
     "eslint": ">=8.40.0",
     "eslint-plugin-n": "^17.2.1",
+    "eslint-plugin-solid": "^0.14.3",
     "eslint-plugin-svelte": "^2.39.0",
     "eslint-plugin-tailwindcss": "^3.17.4"
   },
   "peerDependenciesMeta": {
     "eslint-plugin-n": {
+      "optional": true
+    },
+    "eslint-plugin-solid": {
       "optional": true
     },
     "eslint-plugin-svelte": {

@@ -7,6 +7,7 @@ const lichthagel = async (
   const {
     browser = false,
     node = false,
+    solid = false,
     stylistic = true,
     svelte = false,
     tailwindcss = false,
@@ -29,6 +30,10 @@ const lichthagel = async (
 
   if (typescript) {
     config.push(...configs.typescript);
+  }
+
+  if (solid) {
+    config.push(...(await configs.solid({ withTypescript: typescript })));
   }
 
   if (svelte) {

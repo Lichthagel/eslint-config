@@ -30,6 +30,13 @@ export type OptionsConfig = {
   node?: boolean;
 
   /**
+   * Enable solid-specific rules.
+   *
+   * @default false
+   */
+  solid?: boolean;
+
+  /**
    * Enable stylistic rules.
    *
    * @default true
