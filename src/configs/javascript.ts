@@ -10,7 +10,7 @@ export default [
     languageOptions: {
       ecmaVersion: 2022,
       globals: {
-        ...globals.es2021,
+        ...globals.es2022,
       },
       parserOptions: {
         ecmaVersion: 2022,
