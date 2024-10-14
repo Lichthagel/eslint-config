@@ -1,7 +1,7 @@
 import { assert, describe } from "vitest";
 
 import {
-  processConfig, testEnablesPlugin, testNotEnablesPlugin, testNotHandlesFile,
+  processConfig, testEnablesPlugin, testHandlesFile, testNotEnablesPlugin, testNotHandlesFile,
   testRuleEnabled,
   testRuleUndefined,
 } from "./utils";
@@ -9,7 +9,7 @@ import {
 describe("typescript enabled", async () => {
   const res = await processConfig({ typescript: true }, "src/typescript.ts");
 
-  assert(res);
+  testHandlesFile(res, ".ts");
 
   testEnablesPlugin(res, "@typescript-eslint");
 
@@ -17,7 +17,10 @@ describe("typescript enabled", async () => {
 });
 
 describe("typescript disabled", async () => {
-  testNotHandlesFile({ typescript: false }, "src/typescript.ts");
+  testNotHandlesFile(await processConfig(
+    { typescript: false },
+    "src/typescript.ts",
+  ), ".ts");
 
   const res = await processConfig({ typescript: false }, "src/javascript.js");
 

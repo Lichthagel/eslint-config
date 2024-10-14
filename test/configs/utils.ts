@@ -86,18 +86,14 @@ export const testRuleUndefined = (res: Linter.Config, rule: string) => {
   });
 };
 
-export const testHandlesFile = (opts: OptionsConfig, file: string) => {
-  test(`handles file "${file}"`, async () => {
-    const res = await processConfig(opts, file);
-
+export const testHandlesFile: (res: Linter.Config | undefined, file: string) => asserts res is Linter.Config = (res, file) => {
+  test(`handles file "${file}"`, () => {
     expect(res).toBeDefined();
   });
 };
 
-export const testNotHandlesFile = (opts: OptionsConfig, file: string) => {
-  test(`does not handle file "${file}"`, async () => {
-    const res = await processConfig(opts, file);
-
+export const testNotHandlesFile: (res: Linter.Config | undefined, file: string) => asserts res is undefined = (res, file) => {
+  test(`does not handle file "${file}"`, () => {
     expect(res).toBeUndefined();
   });
 };

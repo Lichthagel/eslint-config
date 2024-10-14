@@ -3,7 +3,7 @@ import {
 } from "vitest";
 
 import {
-  processConfig, testEnablesPlugin, testNotEnablesPlugin, testNotHandlesFile,
+  processConfig, testEnablesPlugin, testHandlesFile, testNotEnablesPlugin, testNotHandlesFile,
   testRuleDisabled,
   testRuleEnabled,
   testRuleUndefined,
@@ -12,7 +12,7 @@ import {
 describe("svelte enabled", async () => {
   const res = await processConfig({ svelte: true }, "src/svelte.svelte");
 
-  assert(res);
+  testHandlesFile(res, ".svelte");
 
   testEnablesPlugin(res, "svelte");
 
@@ -67,7 +67,10 @@ describe("svelte enabled (with stylistic)", async () => {
 });
 
 describe("svelte disabled", async () => {
-  testNotHandlesFile({ svelte: false }, "src/svelte.svelte");
+  testNotHandlesFile(
+    await processConfig({ svelte: false }, "src/svelte.svelte"),
+    ".svelte",
+  );
 
   const res = await processConfig({ svelte: false }, "src/javascript.js");
 
