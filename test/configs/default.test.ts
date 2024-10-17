@@ -43,3 +43,10 @@ describe("default options", async () => {
   testRuleEnabled(res, "unicorn/no-useless-undefined");
   testRuleDisabled(res, "unicorn/no-null");
 });
+
+describe("non-existent option", () => {
+  test("throws error", async () => {
+    // @ts-expect-error nonExistent is not a valid option
+    await expect(processConfig({ nonExistent: true }, "src/file.js")).rejects.toThrow();
+  });
+});

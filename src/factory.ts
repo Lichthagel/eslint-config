@@ -12,7 +12,12 @@ const lichthagel = async (
     svelte = false,
     tailwindcss = false,
     typescript = true,
+    ...rest
   } = options;
+
+  if (Object.keys(rest).length > 0) {
+    throw new Error(`Unknown options: ${Object.keys(rest).join(", ")}`);
+  }
 
   const config: FlatConfigItemStrict[] = [...configs.javascript, ...configs.unicorn, ...configs.perfectionist];
 
