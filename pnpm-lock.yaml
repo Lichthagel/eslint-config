@@ -15,7 +15,7 @@ importers:
         specifier: ^2.9.0
         version: 2.9.0(eslint@9.13.0(jiti@2.0.0))(typescript@5.6.3)
       eslint-plugin-perfectionist:
-        specifier: ^3.7.0
+        specifier: ^3.9.0
         version: 3.9.1(eslint@9.13.0(jiti@2.0.0))(svelte-eslint-parser@0.41.1(svelte@4.2.19))(svelte@4.2.19)(typescript@5.6.3)
       eslint-plugin-unicorn:
         specifier: ^56.0.0
@@ -721,11 +721,6 @@ packages:
     resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==}
     peerDependencies:
       acorn: ^6.0.0 || ^7.0.0 || ^8.0.0
-
-  acorn@8.12.1:
-    resolution: {integrity: sha512-tcpGyI9zbizT9JbV6oYE477V6mTlXvvi0T0G3SNIYE2apm/G5huBa1+K89VGeovbg+jycCrfhl3ADxErOuO6Jg==}
-    engines: {node: '>=0.4.0'}
-    hasBin: true
 
   acorn@8.13.0:
     resolution: {integrity: sha512-8zSiw54Oxrdym50NlZ9sUusyO1Z1ZchgRLWRaK6c86XJFClyCgFKetdowBg5bKxyp/u+CDBJG4Mpp0m3HLZl9w==}
@@ -2581,9 +2576,6 @@ snapshots:
     dependencies:
       acorn: 8.13.0
 
-  acorn@8.12.1:
-    optional: true
-
   acorn@8.13.0: {}
 
   ajv@6.12.6:
@@ -2708,7 +2700,7 @@ snapshots:
     dependencies:
       '@jridgewell/sourcemap-codec': 1.5.0
       '@types/estree': 1.0.6
-      acorn: 8.12.1
+      acorn: 8.13.0
       estree-walker: 3.0.3
       periscopic: 3.1.0
     optional: true
@@ -3663,7 +3655,7 @@ snapshots:
       '@jridgewell/sourcemap-codec': 1.5.0
       '@jridgewell/trace-mapping': 0.3.25
       '@types/estree': 1.0.6
-      acorn: 8.12.1
+      acorn: 8.13.0
       aria-query: 5.3.2
       axobject-query: 4.1.0
       code-red: 1.0.4

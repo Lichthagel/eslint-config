@@ -10,6 +10,19 @@ export default [
   {
     name: "lichthagel/perfectionist",
     rules: {
+      "perfectionist/sort-imports": [
+        "error",
+        {
+          type: "natural",
+          internalPattern: [
+            "^@/.*",
+            "^~.*",
+            "^$.*",
+            "^#.*",
+          ],
+          matcher: "regex",
+        },
+      ],
       "perfectionist/sort-object-types": "off",
       "perfectionist/sort-objects": [
         "off",
