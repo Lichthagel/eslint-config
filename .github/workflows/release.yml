@@ -12,6 +12,8 @@ name: release
 jobs:
   release-please:
     runs-on: ubuntu-latest
+    environment: release-please
+
     steps:
       - uses: googleapis/release-please-action@v4
         with:
