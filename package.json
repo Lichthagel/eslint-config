@@ -28,7 +28,8 @@
     "watch": "tsup --format esm,cjs --watch",
     "test": "vitest",
     "lint": "eslint .",
-    "inspect": "pnpx @eslint/config-inspector"
+    "inspect": "pnpx @eslint/config-inspector",
+    "prepare": "husky"
   },
   "files": [
     "dist",
@@ -59,6 +60,9 @@
     "typescript-eslint": "^8.7.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^19.5.0",
+    "@commitlint/config-conventional": "^19.5.0",
+    "@commitlint/types": "^19.5.0",
     "@types/eslint": "^9.6.1",
     "@types/eslint-plugin-tailwindcss": "^3.17.0",
     "@types/eslint__js": "^8.42.3",
@@ -69,6 +73,8 @@
     "eslint-plugin-svelte": "^2.44.1",
     "eslint-plugin-tailwindcss": "^3.17.4",
     "eslint-typegen": "^0.3.2",
+    "husky": "^9.1.6",
+    "lint-staged": "^15.2.10",
     "tsup": "^8.3.0",
     "tsx": "^4.19.1",
     "typescript": "^5.6.2",
