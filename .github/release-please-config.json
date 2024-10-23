@@ -18,5 +18,6 @@
     { "type": "refactor", "section": "Code Refactoring", "hidden": true },
     { "type": "test", "section": "Tests", "hidden": true },
     { "type": "chore", "section": "Miscellaneous Chores", "hidden": true }
-  ]
+  ],
+  "include-component-in-tag": false
 }
