@@ -92,12 +92,12 @@ const svelte = async (options: SvelteOptions = {}): Promise<FlatConfigItemStrict
         "svelte/spaced-html-comment": ["error", "always"],
         "svelte/valid-each-key": "error",
         ...(
-          disableStylistic ?
-              {
+          disableStylistic
+            ? {
                 "@stylistic/indent": "off", // superseded by svelte/indent
                 "@stylistic/no-trailing-spaces": "off", // superseded by svelte/no-trailing-spaces
-              } :
-              {}
+              }
+            : {}
         ),
       },
     },

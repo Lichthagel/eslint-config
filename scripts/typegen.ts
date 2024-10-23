@@ -3,7 +3,7 @@ import { builtinRules } from "eslint/use-at-your-own-risk";
 import { pluginsToRulesDTS } from "eslint-typegen/core";
 import fs from "node:fs/promises";
 
-const reduceConfigToPlugins = (config: Linter.Config | Linter.Config[]): Record<string, ESLint.Plugin> => {
+const reduceConfigToPlugins = (config: Linter.Config | Linter.Config[]): { [key: string]: ESLint.Plugin } => {
   if (!Array.isArray(config)) {
     return "plugins" in config && config.plugins !== undefined ? config.plugins : {};
   }
@@ -22,7 +22,7 @@ const reduceConfigToPlugins = (config: Linter.Config | Linter.Config[]): Record<
   return plugins;
 };
 
-const plugins: Record<string, ESLint.Plugin> = {
+const plugins: { [key: string]: ESLint.Plugin } = {
   "": {
     rules: Object.fromEntries(builtinRules.entries()),
   },
