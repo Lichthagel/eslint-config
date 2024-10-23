@@ -4,7 +4,7 @@ Collection of eslint configs I use for my projects.
 
 ## Installation
 
-`npm|yarn|pnpm i -D eslint lichthagel/eslint-config`
+`npm|yarn|pnpm i -D eslint @lichthagel/eslint-config`
 
 ## Configuration
 
