@@ -85,7 +85,6 @@ export default [
       "no-unneeded-ternary": "error",
       "no-unreachable-loop": "error",
       "no-unused-expressions": ["error", { allowShortCircuit: true, allowTaggedTemplates: true, allowTernary: true }],
-      "no-use-before-define": "error",
       "no-useless-call": "error",
       "no-useless-computed-key": "error",
       "no-useless-concat": "error",
