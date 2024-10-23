@@ -53,7 +53,7 @@ export default [
       "@stylistic/object-curly-newline": ["error", { consistent: true, minProperties: 4, multiline: true }],
       "@stylistic/object-property-newline": ["error", { allowAllPropertiesOnSameLine: true }],
       "@stylistic/one-var-declaration-per-line": ["error", "always"],
-      "@stylistic/operator-linebreak": ["error", "after"],
+      "@stylistic/operator-linebreak": ["error", "before"],
       "@stylistic/semi-style": ["error", "last"],
       "@stylistic/switch-colon-spacing": ["error", { after: true, before: false }],
 
