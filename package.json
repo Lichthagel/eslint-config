@@ -1,13 +1,21 @@
 {
   "name": "@lichthagel/eslint-config",
   "version": "0.0.0",
-  "description": "my personal eslint-config to extend on",
+  "description": "Licht's ESLint config",
   "keywords": [
     "eslint",
     "eslintconfig",
     "styleguide"
   ],
-  "author": "Lichthagel",
+  "author": "Lichthagel <hey@lichthagel.de>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Lichthagel/eslint-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Lichthagel/eslint-config/issues"
+  },
+  "homepage": "https://github.com/Lichthagel/eslint-config",
   "license": "MIT",
   "type": "module",
   "engines": {
