@@ -7,7 +7,9 @@ on:
 jobs:
   publish:
     runs-on: ubuntu-latest
-    environment: npm
+    environment:
+      name: npm
+      url: https://www.npmjs.com/package/@lichthagel/eslint-config
 
     steps:
       - uses: actions/checkout@v4
