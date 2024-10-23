@@ -9,7 +9,7 @@ export default [
     name: "lichthagel/typescript",
     rules: {
       "@typescript-eslint/array-type": "error",
-      "@typescript-eslint/consistent-indexed-object-style": "warn",
+      "@typescript-eslint/consistent-indexed-object-style": ["warn", "index-signature"],
       "@typescript-eslint/consistent-type-assertions": ["warn", { assertionStyle: "as", objectLiteralTypeAssertions: "allow" }],
       "@typescript-eslint/consistent-type-definitions": ["warn", "type"],
       "@typescript-eslint/default-param-last": "warn",
