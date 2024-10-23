@@ -9,6 +9,13 @@
       "description": "Group minor and patch upgrades together",
       "matchUpdateTypes": ["minor", "patch", "digest"],
       "groupName": "minor and patch upgrades"
+    },
+    {
+      "matchDepTypes": [
+        "dependencies",
+        "require"
+      ],
+      "semanticCommitType": "deps"
     }
   ]
 }
