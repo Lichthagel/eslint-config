@@ -26,7 +26,7 @@ export default [
       "curly": ["error", "all"],
       "default-case-last": "error",
       "dot-notation": "error",
-      "eqeqeq": "error",
+      "eqeqeq": ["error", "smart"],
       "new-cap": [
         "error",
         {
