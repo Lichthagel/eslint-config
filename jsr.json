@@ -9,6 +9,9 @@
       "src/**/*",
       "LICENSE",
       "README.md"
+    ],
+    "exclude": [
+      "!src/**/*"
     ]
   }
 }
