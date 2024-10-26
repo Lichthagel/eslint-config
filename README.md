@@ -4,7 +4,9 @@ Collection of eslint configs I use for my projects.
 
 ## Installation
 
-`npm|yarn|pnpm i -D eslint @lichthagel/eslint-config`
+`npm|yarn|pnpm|bun install -D eslint @lichthagel/eslint-config`
+
+`npx|yarn dlx|pnpm dlx|bunx jsr add @licht/eslint-config` or `deno add jsr:@licht/eslint-config`
 
 ## Configuration
 
