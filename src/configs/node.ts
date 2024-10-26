@@ -2,7 +2,7 @@ import globals from "globals";
 
 import { FlatConfigItemStrict } from "../types";
 
-const node = async () => {
+const node = async (): Promise<FlatConfigItemStrict[]> => {
   const pluginN = await import("eslint-plugin-n").then((mod) => mod.default);
 
   return [
