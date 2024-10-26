@@ -5,6 +5,7 @@ on:
     types: [published]
 
 permissions: 
+  contents: read
   id-token: write
 
 jobs:
@@ -25,7 +26,9 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
       - name: Install dependencies
         run: pnpm install
-      - name: Publish
+      - name: Publish to NPM
         run: pnpm publish --access public --no-git-checks --provenance
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - name: Publish to JSR
+        run: pnpm dlx jsr publish
