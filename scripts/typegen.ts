@@ -47,7 +47,7 @@ console.log(
 );
 
 const dts = await pluginsToRulesDTS(plugins, {
-  includeAugmentation: true,
+  includeAugmentation: false,
 });
 
 await fs.writeFile("src/typegen.d.ts", dts, "utf8");
