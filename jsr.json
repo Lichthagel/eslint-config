@@ -1,0 +1,14 @@
+{
+  "$schema": "https://jsr.io/schema/config-file.v1.json",
+  "name": "@licht/eslint-config",
+  "version": "1.0.0",
+  "description": "Licht's ESLint config",
+  "exports": "./src/index.ts",
+  "publish": {
+    "include": [
+      "src/**/*",
+      "LICENSE",
+      "README.md"
+    ]
+  }
+}
