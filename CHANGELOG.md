@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.0.1](https://github.com/Lichthagel/eslint-config/compare/v1.0.0...v1.0.1) (2024-11-03)
+
+
+### Bug Fixes
+
+* **config/svelte:** disable @stylistc/indent-binary-ops in svelte ([3d0c27a](https://github.com/Lichthagel/eslint-config/commit/3d0c27a8b74288db24e619e90127b66d5f8b6d63))
+* **jsr:** include whole src folder ([5b8af04](https://github.com/Lichthagel/eslint-config/commit/5b8af0429111b785fee28fc4d9b5e3a71fe818b7))
+
+
+### Documentation
+
+* **readme:** add jsr install instructions ([9f8e4f6](https://github.com/Lichthagel/eslint-config/commit/9f8e4f6ec5155b05c4e448f8a33004e44d2e88da))
+
 ## 1.0.0 (2024-10-23)
 
 
