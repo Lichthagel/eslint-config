@@ -1,6 +1,12 @@
 import * as configs from "./configs";
 import { FlatConfigItemStrict, OptionsConfig } from "./types";
 
+/**
+ * Constructs an array of ESLint flat config items based on the provided options.
+ *
+ * @param options The options for generating the ESLint configurations. See {@linkcode OptionsConfig}.
+ * @returns An array of ESLint flat config items.
+ */
 const lichthagel = async (
   options: OptionsConfig = {},
 ): Promise<FlatConfigItemStrict[]> => {
