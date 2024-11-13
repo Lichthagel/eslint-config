@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.0.2](https://github.com/Lichthagel/eslint-config/compare/v1.0.1...v1.0.2) (2024-11-13)
+
+
+### Bug Fixes
+
+* **deps:** update minor and patch upgrades ([#54](https://github.com/Lichthagel/eslint-config/issues/54)) ([8e7418f](https://github.com/Lichthagel/eslint-config/commit/8e7418f6e616779e395ff32369d5cd1bbcc9c529))
+
+
+### Documentation
+
+* add jsdoc to factory & types ([41fb0f4](https://github.com/Lichthagel/eslint-config/commit/41fb0f432a14ee7a6b719fca115604593e2c7cad))
+
 ## [1.0.1](https://github.com/Lichthagel/eslint-config/compare/v1.0.0...v1.0.1) (2024-11-03)
 
 
