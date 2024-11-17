@@ -5,10 +5,11 @@
   "labels": ["dependencies"],
   "packageRules": [
     {
-      "description": "Group linter upgrades together",
+      "description": "Group linter upgrades together (only devDependencies)",
       "extends": ["packages:linters"],
       "matchPackageNames": ["@eslint-react/**", "@commitlint/**"],
-      "groupName": "linters"
+      "matchDepTypes": ["devDependencies"],
+      "groupName": "linters-dev"
     }
   ]
 }
