@@ -20,7 +20,6 @@ export default [
             "^$.*",
             "^#.*",
           ],
-          matcher: "regex",
         },
       ],
       "perfectionist/sort-object-types": "off",
