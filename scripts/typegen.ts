@@ -1,6 +1,6 @@
 import { ESLint, Linter } from "eslint";
-import { builtinRules } from "eslint/use-at-your-own-risk";
 import { pluginsToRulesDTS } from "eslint-typegen/core";
+import { builtinRules } from "eslint/use-at-your-own-risk";
 import fs from "node:fs/promises";
 
 const reduceConfigToPlugins = (config: Linter.Config | Linter.Config[]): { [key: string]: ESLint.Plugin } => {
