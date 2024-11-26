@@ -16,7 +16,7 @@ importers:
         version: 2.11.0(eslint@9.15.0(jiti@2.0.0))(typescript@5.7.2)
       eslint-plugin-perfectionist:
         specifier: ^4.0.0
-        version: 4.1.0(eslint@9.15.0(jiti@2.0.0))(typescript@5.7.2)
+        version: 4.1.2(eslint@9.15.0(jiti@2.0.0))(typescript@5.7.2)
       eslint-plugin-unicorn:
         specifier: ^56.0.0
         version: 56.0.1(eslint@9.15.0(jiti@2.0.0))
@@ -1401,8 +1401,8 @@ packages:
     peerDependencies:
       eslint: '>=8.23.0'
 
-  eslint-plugin-perfectionist@4.1.0:
-    resolution: {integrity: sha512-buUsY6gOLOQyGmKmwStjEZanT+PSZ7+MCiie7wrNWlaebmnPcvD5viOd5tIFbxaTtizas+WbwL6evzOfbKi1jQ==}
+  eslint-plugin-perfectionist@4.1.2:
+    resolution: {integrity: sha512-YjXPWB/rKe/gPUsyuxw75wTUrzN5MuJnRV0PH9NoonFvgcdVIXk551mkBKPr59nRZCbu7S3dFHwfo4gA42DB2w==}
     engines: {node: ^18.0.0 || >=20.0.0}
     peerDependencies:
       eslint: '>=8.0.0'
@@ -2451,6 +2451,12 @@ packages:
     peerDependencies:
       typescript: '>=4.2.0'
 
+  ts-api-utils@1.4.2:
+    resolution: {integrity: sha512-ZF5gQIQa/UmzfvxbHZI3JXN0/Jt+vnAfAviNRAMc491laiK6YCLpCW9ft8oaCRFOTxCZtUTE6XB0ZQAe3olntw==}
+    engines: {node: '>=16'}
+    peerDependencies:
+      typescript: '>=4.2.0'
+
   ts-interface-checker@0.1.13:
     resolution: {integrity: sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==}
 
@@ -3348,7 +3354,7 @@ snapshots:
       is-glob: 4.0.3
       minimatch: 9.0.5
       semver: 7.6.3
-      ts-api-utils: 1.4.1(typescript@5.7.2)
+      ts-api-utils: 1.4.2(typescript@5.7.2)
     optionalDependencies:
       typescript: 5.7.2
     transitivePeerDependencies:
@@ -3829,7 +3835,7 @@ snapshots:
       minimatch: 9.0.5
       semver: 7.6.3
 
-  eslint-plugin-perfectionist@4.1.0(eslint@9.15.0(jiti@2.0.0))(typescript@5.7.2):
+  eslint-plugin-perfectionist@4.1.2(eslint@9.15.0(jiti@2.0.0))(typescript@5.7.2):
     dependencies:
       '@typescript-eslint/types': 8.16.0
       '@typescript-eslint/utils': 8.16.0(eslint@9.15.0(jiti@2.0.0))(typescript@5.7.2)
@@ -4881,6 +4887,10 @@ snapshots:
       typescript: 5.7.2
 
   ts-api-utils@1.4.1(typescript@5.7.2):
+    dependencies:
+      typescript: 5.7.2
+
+  ts-api-utils@1.4.2(typescript@5.7.2):
     dependencies:
       typescript: 5.7.2
 
