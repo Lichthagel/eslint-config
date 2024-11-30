@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.5](https://github.com/Lichthagel/eslint-config/compare/v1.0.4...v1.0.5) (2024-11-30)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @eslint/js to v9.16.0 ([#89](https://github.com/Lichthagel/eslint-config/issues/89)) ([95a1af4](https://github.com/Lichthagel/eslint-config/commit/95a1af4e6801199e894d4bd5e7c23790eaa06ed0))
+
 ## [1.0.4](https://github.com/Lichthagel/eslint-config/compare/v1.0.3...v1.0.4) (2024-11-26)
 
 
