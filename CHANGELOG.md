@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.6](https://github.com/Lichthagel/eslint-config/compare/v1.0.5...v1.0.6) (2024-12-01)
+
+
+### Bug Fixes
+
+* **deps:** update dependency globals to v15.13.0 ([#92](https://github.com/Lichthagel/eslint-config/issues/92)) ([2865947](https://github.com/Lichthagel/eslint-config/commit/28659470fd5c0209dab927a1d02181a01d0cc2ef))
+
 ## [1.0.5](https://github.com/Lichthagel/eslint-config/compare/v1.0.4...v1.0.5) (2024-11-30)
 
 
