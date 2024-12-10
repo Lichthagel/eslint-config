@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.8](https://github.com/Lichthagel/eslint-config/compare/v1.0.7...v1.0.8) (2024-12-10)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @stylistic/eslint-plugin to v2.12.0 ([#100](https://github.com/Lichthagel/eslint-config/issues/100)) ([4e7f6c6](https://github.com/Lichthagel/eslint-config/commit/4e7f6c6e53f64eb96d2de0cf52e238740dd26c79))
+* **deps:** update dependency typescript-eslint to v8.18.0 ([#102](https://github.com/Lichthagel/eslint-config/issues/102)) ([2b4ca16](https://github.com/Lichthagel/eslint-config/commit/2b4ca1692c59d3c5cabe05915d13aea160f82b64))
+
 ## [1.0.7](https://github.com/Lichthagel/eslint-config/compare/v1.0.6...v1.0.7) (2024-12-03)
 
 
