@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.11](https://github.com/Lichthagel/eslint-config/compare/v1.0.10...v1.0.11) (2025-01-10)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @eslint/js to v9.18.0 ([#153](https://github.com/Lichthagel/eslint-config/issues/153)) ([e686085](https://github.com/Lichthagel/eslint-config/commit/e686085f3d52dbfd29aef8aa43268a65652f0eba))
+* **deps:** update dependency typescript-eslint to v8.19.1 ([#147](https://github.com/Lichthagel/eslint-config/issues/147)) ([7bb1d1d](https://github.com/Lichthagel/eslint-config/commit/7bb1d1d88267af55a592d8ff3914097e968c964e))
+
 ## [1.0.10](https://github.com/Lichthagel/eslint-config/compare/v1.0.9...v1.0.10) (2025-01-01)
 
 
