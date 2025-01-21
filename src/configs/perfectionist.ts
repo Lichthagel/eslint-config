@@ -26,9 +26,16 @@ export default [
       "perfectionist/sort-objects": [
         "off",
         {
-          customGroups: {
-            id: ["id", "name", "slug"],
-          },
+          customGroups: [
+            {
+              groupName: "id",
+              elementNamePattern: "^(?:id|uuid|key|index|slug)$",
+            },
+            {
+              groupName: "name",
+              elementNamePattern: "^(?:name|title|label)$",
+            },
+          ],
           groups: ["id", "unknown"],
           partitionByComment: true,
           partitionByNewLine: true,
