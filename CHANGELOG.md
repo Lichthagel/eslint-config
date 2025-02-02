@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.15](https://github.com/Lichthagel/eslint-config/compare/v1.0.14...v1.0.15) (2025-02-01)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @stylistic/eslint-plugin to v3.0.1 ([#196](https://github.com/Lichthagel/eslint-config/issues/196)) ([61f6ae9](https://github.com/Lichthagel/eslint-config/commit/61f6ae9b171517101f7c69a8710f9b9e3dd704fb))
+
 ## [1.0.14](https://github.com/Lichthagel/eslint-config/compare/v1.0.13...v1.0.14) (2025-01-28)
 
 
