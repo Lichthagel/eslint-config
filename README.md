@@ -10,6 +10,8 @@ Collection of eslint configs I use for my projects.
 
 ## Configuration
 
+Using `eslint.config.js`:
+
 ```js
 // @ts-check
 
@@ -20,6 +22,19 @@ export default [
   ...await lichthagel({
     ...options
   }),
-  ...otherSettings
+  ...otherConfigs
 ];
+```
+
+Or using `eslint.config.ts` (see <https://eslint.org/docs/latest/use/configure/configuration-files#typescript-configuration-files>):
+
+```ts
+import lichthagel, { FlatConfigItem } from "./dist/index.js";
+
+export default [
+  ...(await lichthagel({
+    ...options
+  })),
+  ...otherConfigs
+] satisfies FlatConfigItem[];
 ```

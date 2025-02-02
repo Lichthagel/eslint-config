@@ -1,11 +1,9 @@
-// @ts-check
 import path from "node:path";
 import url from "node:url";
 import ts from "typescript-eslint";
 
-import lichthagel from "./dist/index.js";
+import lichthagel, { FlatConfigItem } from "./dist/index.js";
 
-/** @type {import("./dist/index.js").FlatConfigItem[]} */
 export default [
   ...(await lichthagel({
     node: true,
@@ -25,7 +23,7 @@ export default [
   },
   {
     files: ["eslint.config.js"],
-    ...(/** @type {import("eslint").Linter.FlatConfig} */ (ts.configs.disableTypeChecked)),
+    ...ts.configs.disableTypeChecked as FlatConfigItem,
   },
   {
     files: ["src/typegen.d.ts"],
@@ -36,4 +34,4 @@ export default [
   {
     ignores: ["dist/**/*"],
   },
-];
+] satisfies FlatConfigItem[];
