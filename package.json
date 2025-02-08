@@ -63,9 +63,7 @@
     "@commitlint/cli": "^19.5.0",
     "@commitlint/config-conventional": "^19.5.0",
     "@commitlint/types": "^19.5.0",
-    "@types/eslint": "^9.6.1",
     "@types/eslint-plugin-tailwindcss": "^3.17.0",
-    "@types/eslint__js": "^8.42.3",
     "@types/node": "^22.7.4",
     "eslint": "^9.11.1",
     "eslint-plugin-n": "^17.10.3",
@@ -101,6 +99,11 @@
     },
     "eslint-plugin-tailwindcss": {
       "optional": true
+    }
+  },
+  "pnpm": {
+    "overrides": {
+      "@types/eslint": "npm:eslint@^9.11.1"
     }
   }
 }
