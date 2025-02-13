@@ -1,7 +1,8 @@
-import { Linter } from "eslint";
+import type { Linter } from "eslint";
+
 import ts from "typescript-eslint";
 
-import { FlatConfigItemStrict } from "../types";
+import type { FlatConfigItemStrict } from "../types";
 
 export default [
   ...(ts.configs.recommendedTypeChecked as Linter.FlatConfig[]),
@@ -18,6 +19,7 @@ export default [
       "@typescript-eslint/explicit-member-accessibility": "error",
       "@typescript-eslint/method-signature-style": "warn",
       "@typescript-eslint/no-array-constructor": "error",
+      "@typescript-eslint/no-useless-empty-export": "error",
       "default-param-last": "off",
     },
   },
