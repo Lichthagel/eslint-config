@@ -14,7 +14,7 @@ export default [
       "@typescript-eslint/consistent-type-assertions": ["warn", { assertionStyle: "as", objectLiteralTypeAssertions: "allow" }],
       "@typescript-eslint/consistent-type-definitions": ["warn", "type"],
       "@typescript-eslint/consistent-type-exports": "error",
-      "@typescript-eslint/consistent-type-imports": "error",
+      "@typescript-eslint/consistent-type-imports": ["error", { fixStyle: "inline-type-imports" }],
       "@typescript-eslint/default-param-last": "warn",
       "@typescript-eslint/explicit-member-accessibility": "error",
       "@typescript-eslint/method-signature-style": "warn",
