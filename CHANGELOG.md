@@ -1,5 +1,20 @@
 # Changelog
 
+## [1.0.18](https://github.com/Lichthagel/eslint-config/compare/v1.0.17...v1.0.18) (2025-02-14)
+
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-perfectionist to v4.9.0 ([#228](https://github.com/Lichthagel/eslint-config/issues/228)) ([af2ca69](https://github.com/Lichthagel/eslint-config/commit/af2ca6905f2888b376d08b5b00e940fc35c703d1))
+* **deps:** update dependency globals to v15.15.0 ([#226](https://github.com/Lichthagel/eslint-config/issues/226)) ([972ba19](https://github.com/Lichthagel/eslint-config/commit/972ba19d999da85fd519511f1fa4db7e3296c739))
+* **deps:** update dependency typescript-eslint to v8.24.0 ([#220](https://github.com/Lichthagel/eslint-config/issues/220)) ([3804d58](https://github.com/Lichthagel/eslint-config/commit/3804d582809c7b59832c7293f363f20df5ba7d73))
+
+
+### Configuration Changes
+
+* **typescript:** error on consistent-type-{imports,export} ([12eaf34](https://github.com/Lichthagel/eslint-config/commit/12eaf344df9a21fe170f0629cdb1121f211bee16))
+* **typescript:** error on no-useless-empty-export ([5ec02ca](https://github.com/Lichthagel/eslint-config/commit/5ec02ca430ccb691a42867a71622257bd351d922))
+
 ## [1.0.17](https://github.com/Lichthagel/eslint-config/compare/v1.0.16...v1.0.17) (2025-02-08)
 
 
