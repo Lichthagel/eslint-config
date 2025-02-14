@@ -1,6 +1,6 @@
-import { Linter } from "eslint";
+import type { Linter } from "eslint";
 
-import { FlatConfigItemStrict } from "../types";
+import type { FlatConfigItemStrict } from "../types";
 
 type SolidOptions = {
   withTypescript?: boolean;

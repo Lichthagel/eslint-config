@@ -1,6 +1,6 @@
 import unicornPlugin from "eslint-plugin-unicorn";
 
-import { FlatConfigItemStrict } from "../types";
+import type { FlatConfigItemStrict } from "../types";
 
 export default [
   {

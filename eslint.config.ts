@@ -2,7 +2,7 @@ import path from "node:path";
 import url from "node:url";
 import ts from "typescript-eslint";
 
-import lichthagel, { FlatConfigItem } from "./dist/index.js";
+import lichthagel, { type FlatConfigItem } from "./dist/index.js";
 
 export default [
   ...(await lichthagel({

@@ -1,6 +1,6 @@
 import globals from "globals";
 
-import { FlatConfigItemStrict } from "../types";
+import type { FlatConfigItemStrict } from "../types";
 
 export default [
   {

@@ -1,5 +1,6 @@
+import type { FlatConfigItemStrict, OptionsConfig } from "./types";
+
 import * as configs from "./configs";
-import { FlatConfigItemStrict, OptionsConfig } from "./types";
 
 /**
  * Constructs an array of ESLint flat config items based on the provided options.

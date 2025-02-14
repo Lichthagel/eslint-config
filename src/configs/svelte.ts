@@ -1,4 +1,4 @@
-import { FlatConfigItemStrict } from "../types";
+import type { FlatConfigItemStrict } from "../types";
 
 type SvelteOptions = {
   disableStylistic?: boolean;

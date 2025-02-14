@@ -1,4 +1,5 @@
-import { ESLint, Linter } from "eslint";
+import type { ESLint, Linter } from "eslint";
+
 import { pluginsToRulesDTS } from "eslint-typegen/core";
 import { builtinRules } from "eslint/use-at-your-own-risk";
 import fs from "node:fs/promises";

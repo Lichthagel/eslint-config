@@ -1,6 +1,6 @@
 import perfectionst from "eslint-plugin-perfectionist";
 
-import { FlatConfigItemStrict } from "../types";
+import type { FlatConfigItemStrict } from "../types";
 
 export default [
   {

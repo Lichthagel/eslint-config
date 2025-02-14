@@ -1,7 +1,7 @@
-import { ESLint, Linter } from "eslint";
+import { ESLint, type Linter } from "eslint";
 import { assert, expect, test } from "vitest";
 
-import lichthagel, { OptionsConfig } from "../../src";
+import lichthagel, { type OptionsConfig } from "../../src";
 
 export const processConfig = async (options: OptionsConfig, file: string) => {
   const cfg = await lichthagel(options);

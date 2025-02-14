@@ -1,6 +1,6 @@
 import stylistic from "@stylistic/eslint-plugin";
 
-import { FlatConfigItemStrict } from "../types";
+import type { FlatConfigItemStrict } from "../types";
 
 export default [
   {

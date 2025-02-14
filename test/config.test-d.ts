@@ -1,4 +1,5 @@
-import { Linter } from "eslint";
+import type { Linter } from "eslint";
+
 import { expectTypeOf, test } from "vitest";
 
 import lichthagel, { type FlatConfigItemStrict } from "../src";
