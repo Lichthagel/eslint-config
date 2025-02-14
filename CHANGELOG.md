@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.19](https://github.com/Lichthagel/eslint-config/compare/v1.0.18...v1.0.19) (2025-02-14)
+
+
+### Configuration Changes
+
+* **typescript:** consistent-type-imports fixStyle inline ([ccf9ac6](https://github.com/Lichthagel/eslint-config/commit/ccf9ac6bddc47f3e1aa61eccc146840ccedd8861))
+
 ## [1.0.18](https://github.com/Lichthagel/eslint-config/compare/v1.0.17...v1.0.18) (2025-02-14)
 
 
