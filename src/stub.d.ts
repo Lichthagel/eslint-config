@@ -1,4 +1,3 @@
-declare module "eslint-plugin-unicorn";
 declare module "eslint-plugin-import";
 declare module "eslint-plugin-perfectionist" {
   export default import("eslint").ESLint.Plugin;
