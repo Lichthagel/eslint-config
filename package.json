@@ -70,7 +70,7 @@
     "eslint-plugin-solid": "^0.14.3",
     "eslint-plugin-svelte": "^2.44.1",
     "eslint-plugin-tailwindcss": "^3.17.4",
-    "eslint-typegen": "^1.0.0",
+    "eslint-typegen": "^2.0.0",
     "husky": "^9.1.6",
     "jiti": "^2.4.2",
     "lint-staged": "^15.2.10",
