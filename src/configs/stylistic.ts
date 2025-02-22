@@ -9,7 +9,6 @@ export default [
       arrowParens: true,
       braceStyle: "1tbs",
       commaDangle: "always-multiline",
-      flat: true,
       indent: 2,
       jsx: true,
       quoteProps: "consistent-as-needed",
