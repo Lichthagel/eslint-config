@@ -84,7 +84,7 @@
     "eslint": ">=8.40.0",
     "eslint-plugin-n": "^17.2.1",
     "eslint-plugin-solid": "^0.14.3",
-    "eslint-plugin-svelte": "^2.39.0",
+    "eslint-plugin-svelte": "^2.39.0 || ^3.0.0",
     "eslint-plugin-tailwindcss": "^3.17.4"
   },
   "peerDependenciesMeta": {
