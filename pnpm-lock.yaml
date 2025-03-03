@@ -16,7 +16,7 @@ importers:
         version: 9.21.0
       '@stylistic/eslint-plugin':
         specifier: ^4.0.0
-        version: 4.1.0(eslint@9.21.0(jiti@2.4.2))(typescript@5.8.2)
+        version: 4.2.0(eslint@9.21.0(jiti@2.4.2))(typescript@5.8.2)
       eslint-plugin-perfectionist:
         specifier: ^4.0.0
         version: 4.9.0(eslint@9.21.0(jiti@2.4.2))(typescript@5.8.2)
@@ -519,8 +519,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@stylistic/eslint-plugin@4.1.0':
-    resolution: {integrity: sha512-bytbL7qiici7yPyEiId0fGPK9kjQbzcPMj2aftPfzTCyJ/CRSKdtI+iVjM0LSGzGxfunflI+MDDU9vyIIeIpoQ==}
+  '@stylistic/eslint-plugin@4.2.0':
+    resolution: {integrity: sha512-8hXezgz7jexGHdo5WN6JBEIPHCSFyyU4vgbxevu4YLVS5vl+sxqAAGyXSzfNDyR6xMNSH5H1x67nsXcYMOHtZA==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       eslint: '>=9.0.0'
@@ -2564,7 +2564,7 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.34.9':
     optional: true
 
-  '@stylistic/eslint-plugin@4.1.0(eslint@9.21.0(jiti@2.4.2))(typescript@5.8.2)':
+  '@stylistic/eslint-plugin@4.2.0(eslint@9.21.0(jiti@2.4.2))(typescript@5.8.2)':
     dependencies:
       '@typescript-eslint/utils': 8.25.0(eslint@9.21.0(jiti@2.4.2))(typescript@5.8.2)
       eslint: 9.21.0(jiti@2.4.2)
