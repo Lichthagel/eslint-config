@@ -56,7 +56,7 @@ importers:
         version: 0.14.5(eslint@9.21.0(jiti@2.4.2))(typescript@5.8.2)
       eslint-plugin-svelte:
         specifier: ^3.0.0
-        version: 3.0.2(eslint@9.21.0(jiti@2.4.2))(svelte@5.21.0)
+        version: 3.0.2(eslint@9.21.0(jiti@2.4.2))(svelte@5.22.1)
       eslint-plugin-tailwindcss:
         specifier: ^3.17.4
         version: 3.18.0(tailwindcss@3.4.17)
@@ -74,7 +74,7 @@ importers:
         version: 15.4.3
       svelte:
         specifier: ^5.12.0
-        version: 5.21.0
+        version: 5.22.1
       tsup:
         specifier: ^8.3.0
         version: 8.4.0(jiti@2.4.2)(postcss@8.5.3)(tsx@4.19.3)(typescript@5.8.2)(yaml@2.7.0)
@@ -525,6 +525,11 @@ packages:
     peerDependencies:
       eslint: '>=9.0.0'
 
+  '@sveltejs/acorn-typescript@1.0.5':
+    resolution: {integrity: sha512-IwQk4yfwLdibDlrXVE04jTZYlLnwsTT2PIOQQGNLWfjavGifnk1JD1LcZjZaBTRcxZu2FfPfNLOE04DSu9lqtQ==}
+    peerDependencies:
+      acorn: ^8.9.0
+
   '@types/conventional-commits-parser@5.0.1':
     resolution: {integrity: sha512-7uz5EHdzz2TqoMfV7ee61Egf5y6NkcO4FB/1iCCQnbeiI1F3xzv3vK5dBCXUCLQgGYS+mUeigK1iKQzvED+QnQ==}
 
@@ -652,11 +657,6 @@ packages:
     resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==}
     peerDependencies:
       acorn: ^6.0.0 || ^7.0.0 || ^8.0.0
-
-  acorn-typescript@1.4.13:
-    resolution: {integrity: sha512-xsc9Xv0xlVfwp2o7sQ+GCQ1PgbkdcpWdTzrwXxO3xDMTAywVS3oXVOcOHuRjAPkS4P9b+yc/qNF15460v+jp4Q==}
-    peerDependencies:
-      acorn: '>=8.9.0'
 
   acorn@8.14.0:
     resolution: {integrity: sha512-cl669nCJTZBsL97OF4kUQm5g5hC2uihk0NxY3WENAC0TYdILVkAyHymAntgxGkl7K+t0cXIrH5siy5S4XkFycA==}
@@ -1949,8 +1949,8 @@ packages:
       svelte:
         optional: true
 
-  svelte@5.21.0:
-    resolution: {integrity: sha512-+pUFl4d0cu2KoxTtwjzByneCXbUzsNlGc4zMDDT/r2usp3VowYEGu1mFvbjcxmWTkwoy3tyhOg7fsz5aJo0wHw==}
+  svelte@5.22.1:
+    resolution: {integrity: sha512-b9DQGnfrZc+km4u3j6qkEY87pYe23yfgBT03CkeBlYST+Wzij7ut1o0BSoQ+UmiyAO1nPh9DMJJCoGDdUOrunw==}
     engines: {node: '>=18'}
 
   tailwindcss@3.4.17:
@@ -2601,6 +2601,10 @@ snapshots:
       - supports-color
       - typescript
 
+  '@sveltejs/acorn-typescript@1.0.5(acorn@8.14.0)':
+    dependencies:
+      acorn: 8.14.0
+
   '@types/conventional-commits-parser@5.0.1':
     dependencies:
       '@types/node': 22.13.9
@@ -2782,10 +2786,6 @@ snapshots:
       through: 2.3.8
 
   acorn-jsx@5.3.2(acorn@8.14.0):
-    dependencies:
-      acorn: 8.14.0
-
-  acorn-typescript@1.4.13(acorn@8.14.0):
     dependencies:
       acorn: 8.14.0
 
@@ -3131,7 +3131,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-svelte@3.0.2(eslint@9.21.0(jiti@2.4.2))(svelte@5.21.0):
+  eslint-plugin-svelte@3.0.2(eslint@9.21.0(jiti@2.4.2))(svelte@5.22.1):
     dependencies:
       '@eslint-community/eslint-utils': 4.4.1(eslint@9.21.0(jiti@2.4.2))
       '@jridgewell/sourcemap-codec': 1.5.0
@@ -3143,9 +3143,9 @@ snapshots:
       postcss-load-config: 3.1.4(postcss@8.5.3)
       postcss-safe-parser: 7.0.1(postcss@8.5.3)
       semver: 7.7.1
-      svelte-eslint-parser: 1.0.0(svelte@5.21.0)
+      svelte-eslint-parser: 1.0.0(svelte@5.22.1)
     optionalDependencies:
-      svelte: 5.21.0
+      svelte: 5.22.1
     transitivePeerDependencies:
       - ts-node
 
@@ -4011,7 +4011,7 @@ snapshots:
 
   supports-preserve-symlinks-flag@1.0.0: {}
 
-  svelte-eslint-parser@1.0.0(svelte@5.21.0):
+  svelte-eslint-parser@1.0.0(svelte@5.22.1):
     dependencies:
       eslint-scope: 8.2.0
       eslint-visitor-keys: 4.2.0
@@ -4020,15 +4020,15 @@ snapshots:
       postcss-scss: 4.0.9(postcss@8.5.3)
       postcss-selector-parser: 7.1.0
     optionalDependencies:
-      svelte: 5.21.0
+      svelte: 5.22.1
 
-  svelte@5.21.0:
+  svelte@5.22.1:
     dependencies:
       '@ampproject/remapping': 2.3.0
       '@jridgewell/sourcemap-codec': 1.5.0
+      '@sveltejs/acorn-typescript': 1.0.5(acorn@8.14.0)
       '@types/estree': 1.0.6
       acorn: 8.14.0
-      acorn-typescript: 1.4.13(acorn@8.14.0)
       aria-query: 5.3.2
       axobject-query: 4.1.0
       clsx: 2.1.1
