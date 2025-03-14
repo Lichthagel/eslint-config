@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.24](https://github.com/Lichthagel/eslint-config/compare/v1.0.23...v1.0.24) (2025-03-14)
+
+
+### Bug Fixes
+
+* **deps:** update dependency typescript-eslint to v8.26.1 ([#289](https://github.com/Lichthagel/eslint-config/issues/289)) ([70e775e](https://github.com/Lichthagel/eslint-config/commit/70e775ec03765d3bda32a2f02c845c57b736d10d))
+
 ## [1.0.23](https://github.com/Lichthagel/eslint-config/compare/v1.0.22...v1.0.23) (2025-03-09)
 
 
