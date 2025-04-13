@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.0.25](https://github.com/Lichthagel/eslint-config/compare/v1.0.24...v1.0.25) (2025-04-12)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @eslint/js to v9.24.0 ([#331](https://github.com/Lichthagel/eslint-config/issues/331)) ([f5d24e0](https://github.com/Lichthagel/eslint-config/commit/f5d24e0b45eb9962bed7c27c999eaf7f0fc372b5))
+* **deps:** update dependency eslint-plugin-perfectionist to v4.11.0 ([#327](https://github.com/Lichthagel/eslint-config/issues/327)) ([94b01d3](https://github.com/Lichthagel/eslint-config/commit/94b01d364333af5ddc02a313eb3267dd1c4c6920))
+* **deps:** update dependency typescript-eslint to v8.29.0 ([#322](https://github.com/Lichthagel/eslint-config/issues/322)) ([3728ed5](https://github.com/Lichthagel/eslint-config/commit/3728ed5dd128db01f6f066418693a9bda2f9d337))
+* **deps:** update dependency typescript-eslint to v8.29.1 ([#336](https://github.com/Lichthagel/eslint-config/issues/336)) ([227a761](https://github.com/Lichthagel/eslint-config/commit/227a761f838e82f1cb242fb9eb5cb5aa4fdc1bcb))
+
 ## [1.0.24](https://github.com/Lichthagel/eslint-config/compare/v1.0.23...v1.0.24) (2025-03-26)
 
 
