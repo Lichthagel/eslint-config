@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.0.29](https://github.com/Lichthagel/eslint-config/compare/v1.0.28...v1.0.29) (2025-07-24)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @stylistic/eslint-plugin to v5.2.1 ([#448](https://github.com/Lichthagel/eslint-config/issues/448)) ([911e4d2](https://github.com/Lichthagel/eslint-config/commit/911e4d23886af20dd868e3cff3b6b8f69c933444))
+* **deps:** update dependency @stylistic/eslint-plugin to v5.2.2 ([#452](https://github.com/Lichthagel/eslint-config/issues/452)) ([681efd7](https://github.com/Lichthagel/eslint-config/commit/681efd7635fd6cc6ca77721e81f92d7f6dae0167))
+* **deps:** update dependency eslint-plugin-unicorn to v60 ([#449](https://github.com/Lichthagel/eslint-config/issues/449)) ([ac315e9](https://github.com/Lichthagel/eslint-config/commit/ac315e98bd9e9493d55e67c79ccfb0c3dcbbdd72))
+* **deps:** update dependency typescript-eslint to v8.38.0 ([#451](https://github.com/Lichthagel/eslint-config/issues/451)) ([fe6afc9](https://github.com/Lichthagel/eslint-config/commit/fe6afc91ed0de22a228f5d73bc9a91709f29b672))
+
 ## [1.0.28](https://github.com/Lichthagel/eslint-config/compare/v1.0.27...v1.0.28) (2025-07-16)
 
 
