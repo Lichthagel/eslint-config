@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.30](https://github.com/Lichthagel/eslint-config/compare/v1.0.29...v1.0.30) (2025-07-26)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @eslint/js to v9.32.0 ([#457](https://github.com/Lichthagel/eslint-config/issues/457)) ([587c9ce](https://github.com/Lichthagel/eslint-config/commit/587c9ceed7a51ed6d009509cee142c5edb5b07b5))
+
 ## [1.0.29](https://github.com/Lichthagel/eslint-config/compare/v1.0.28...v1.0.29) (2025-07-24)
 
 
