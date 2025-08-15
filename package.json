@@ -1,6 +1,6 @@
 {
   "name": "@lichthagel/eslint-config",
-  "version": "1.0.30",
+  "version": "1.0.31",
   "description": "Licht's ESLint config",
   "keywords": [
     "eslint",
