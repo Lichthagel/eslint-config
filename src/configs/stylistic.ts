@@ -48,6 +48,7 @@ export default [
       "@stylistic/multiline-ternary": ["error", "always-multiline"],
       "@stylistic/newline-per-chained-call": ["error", { ignoreChainWithDepth: 2 }],
       "@stylistic/no-extra-semi": "error",
+      "@stylistic/no-multi-spaces": "error",
       "@stylistic/nonblock-statement-body-position": ["error", "beside"],
       "@stylistic/object-curly-newline": ["error", { consistent: true, minProperties: 4, multiline: true }],
       "@stylistic/object-property-newline": ["error", { allowAllPropertiesOnSameLine: true }],
@@ -61,7 +62,6 @@ export default [
       "@stylistic/jsx-closing-bracket-location": ["error", "line-aligned"],
       "@stylistic/jsx-curly-brace-presence": ["error", { children: "never", propElementValues: "always", props: "never" }],
       "@stylistic/jsx-pascal-case": "error",
-      "@stylistic/jsx-props-no-multi-spaces": "error",
       "@stylistic/jsx-self-closing-comp": "error",
 
     },
