@@ -22,10 +22,10 @@
     "node": ">=16.0.0"
   },
   "scripts": {
-    "build": "pnpm run typegen && tsup --format esm,cjs --clean --dts",
+    "build": "pnpm run typegen && tsdown --format esm,cjs --clean --dts",
     "typegen": "tsx scripts/typegen.ts",
     "prepack": "pnpm run build",
-    "watch": "tsup --format esm,cjs --watch",
+    "watch": "tsdown --format esm,cjs --watch",
     "test": "vitest",
     "lint": "eslint .",
     "inspect": "pnpx @eslint/config-inspector",
@@ -75,7 +75,7 @@
     "jiti": "^2.4.2",
     "lint-staged": "^16.0.0",
     "svelte": "^5.12.0",
-    "tsup": "^8.3.0",
+    "tsdown": "^0.15.7",
     "tsx": "^4.19.1",
     "typescript": "^5.6.2",
     "vitest": "^3.0.0"
