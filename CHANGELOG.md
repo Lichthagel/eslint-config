@@ -1,5 +1,20 @@
 # Changelog
 
+## [1.0.31](https://github.com/Lichthagel/eslint-config/compare/v1.0.30...v1.0.31) (2025-10-19)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @eslint/js to v9.34.0 ([#492](https://github.com/Lichthagel/eslint-config/issues/492)) ([ee55775](https://github.com/Lichthagel/eslint-config/commit/ee557753002389bc2ba53e038b88f90013ada369))
+* **deps:** update dependency @eslint/js to v9.36.0 ([#502](https://github.com/Lichthagel/eslint-config/issues/502)) ([25e8b5b](https://github.com/Lichthagel/eslint-config/commit/25e8b5b01708a3816d65a86c22051b51d2e53dca))
+* **deps:** update dependency @stylistic/eslint-plugin to v5.4.0 ([#503](https://github.com/Lichthagel/eslint-config/issues/503)) ([a603b8c](https://github.com/Lichthagel/eslint-config/commit/a603b8c0f47eaf293fbf8d91460fba183e8e30e5))
+* **deps:** update dependency eslint-plugin-unicorn to v61 ([#507](https://github.com/Lichthagel/eslint-config/issues/507)) ([b5aca66](https://github.com/Lichthagel/eslint-config/commit/b5aca664d80f61987cef3fd0c42b4860e46d6d84))
+* **deps:** update dependency globals to v16.4.0 ([#504](https://github.com/Lichthagel/eslint-config/issues/504)) ([87adc47](https://github.com/Lichthagel/eslint-config/commit/87adc475eaf67eef080a2e034c1827a86c4d6fa1))
+* **deps:** update dependency typescript-eslint to v8.39.1 ([#481](https://github.com/Lichthagel/eslint-config/issues/481)) ([87ba0c0](https://github.com/Lichthagel/eslint-config/commit/87ba0c0ab780519e6fa87f72cf488d5c1cc4549d))
+* **deps:** update dependency typescript-eslint to v8.41.0 ([#489](https://github.com/Lichthagel/eslint-config/issues/489)) ([160329f](https://github.com/Lichthagel/eslint-config/commit/160329f9a7edb42106c4555715dcf56b17f49c14))
+* **deps:** update dependency typescript-eslint to v8.44.0 ([#505](https://github.com/Lichthagel/eslint-config/issues/505)) ([00851b2](https://github.com/Lichthagel/eslint-config/commit/00851b2aad6486198417f50d76d0c818b0c7d3bc))
+* **deps:** update dependency typescript-eslint to v8.44.1 ([#513](https://github.com/Lichthagel/eslint-config/issues/513)) ([fc5487b](https://github.com/Lichthagel/eslint-config/commit/fc5487bc2bc84ac01f68960d900aad993f1529a0))
+
 ## [1.0.30](https://github.com/Lichthagel/eslint-config/compare/v1.0.29...v1.0.30) (2025-08-08)
 
 
