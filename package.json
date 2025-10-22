@@ -78,7 +78,7 @@
     "tsdown": "^0.15.7",
     "tsx": "^4.19.1",
     "typescript": "^5.6.2",
-    "vitest": "^3.0.0"
+    "vitest": "^4.0.0"
   },
   "peerDependencies": {
     "eslint": ">=8.40.0",
