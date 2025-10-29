@@ -19,12 +19,12 @@ describe("default options", async () => {
 
   test("uses ES2022", () => {
     expect(res.languageOptions?.ecmaVersion).toBe(2022);
-    expect(res.languageOptions?.parserOptions?.ecmaVersion).toBe(2022);
+    expect((res.languageOptions?.parserOptions as { ecmaVersion?: number })?.ecmaVersion).toBe(2022);
   });
 
   test("uses ES modules", () => {
     expect(res.languageOptions?.sourceType).toBe("module");
-    expect(res.languageOptions?.parserOptions?.sourceType).toBe("module");
+    expect((res.languageOptions?.parserOptions as { sourceType?: string })?.sourceType).toBe("module");
   });
 
   test("has ES2021 globals", () => {

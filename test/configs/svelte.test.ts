@@ -1,6 +1,10 @@
+import type { RuleConfig } from "@commitlint/types";
+
 import {
   assert, describe, expect, test,
 } from "vitest";
+
+import type { RuleOptions } from "../../src/typegen";
 
 import {
   processConfig, testEnablesPlugin, testHandlesFile, testNotEnablesPlugin, testNotHandlesFile,
@@ -25,11 +29,11 @@ describe("svelte enabled (with typescript)", async () => {
   assert(res);
 
   test("svelte uses typescript parser", () => {
-    expect(res.languageOptions?.parserOptions?.parser).toBe("@typescript-eslint/parser");
+    expect((res.languageOptions?.parserOptions as { parser?: unknown })?.parser).toBe("@typescript-eslint/parser");
   });
 
   test("svelte uses typescript block lang", () => {
-    const ruleOpts = res.rules?.["svelte/block-lang"];
+    const ruleOpts = (res.rules?.["svelte/block-lang"]) as RuleConfig<RuleOptions> | undefined;
 
     assert(ruleOpts);
     assert(Array.isArray(ruleOpts));
@@ -44,11 +48,11 @@ describe("svelte enabled (without typescript)", async () => {
   assert(res);
 
   test("svelte does not use typescript parser", () => {
-    expect(res.languageOptions?.parserOptions?.parser).not.toBe("@typescript-eslint/parser");
+    expect((res.languageOptions?.parserOptions as { parser?: unknown })?.parser).not.toBe("@typescript-eslint/parser");
   });
 
   test("svelte uses \"null\" block lang", () => {
-    const ruleOpts = res.rules?.["svelte/block-lang"];
+    const ruleOpts = res.rules?.["svelte/block-lang"] as RuleConfig<RuleOptions> | undefined;
 
     assert(ruleOpts);
     assert(Array.isArray(ruleOpts));
