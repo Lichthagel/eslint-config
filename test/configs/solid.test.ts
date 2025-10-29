@@ -16,7 +16,7 @@ describe("solid enabled", async () => {
   testHandlesFile(res, ".jsx");
 
   test("enables jsx features", () => {
-    expect(res.languageOptions?.parserOptions?.ecmaFeatures?.jsx).toBe(true);
+    expect((res.languageOptions?.parserOptions as { ecmaFeatures?: { jsx?: boolean } })?.ecmaFeatures?.jsx ?? false).toBe(true);
   });
 
   testEnablesPlugin(res, "solid");

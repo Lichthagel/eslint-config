@@ -18,12 +18,12 @@ export const processConfig = async (options: OptionsConfig, file: string) => {
 export const testHasGlobal = (res: Linter.Config, global: string, readonly = false) => {
   if (readonly) {
     test(`has readonly "${global}" global`, () => {
-      const globals = res.languageOptions?.globals ?? {};
+      const globals = res.languageOptions?.globals as Linter.Globals ?? {};
       expect(globals[global]).toBe("readonly");
     });
   } else {
     test(`has "${global}" global`, () => {
-      const globals = res.languageOptions?.globals ?? {};
+      const globals = res.languageOptions?.globals as Linter.Globals ?? {};
       expect(globals[global]).toBeDefined();
     });
   }
@@ -31,7 +31,7 @@ export const testHasGlobal = (res: Linter.Config, global: string, readonly = fal
 
 export const testNotHasGlobal = (res: Linter.Config, global: string) => {
   test(`does not have "${global}" global`, () => {
-    const globals = res.languageOptions?.globals ?? {};
+    const globals = res.languageOptions?.globals as Linter.Globals ?? {};
     expect(globals[global]).toBeUndefined();
   });
 };
