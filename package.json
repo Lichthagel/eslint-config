@@ -22,7 +22,7 @@
     "node": ">=16.0.0"
   },
   "scripts": {
-    "build": "pnpm run typegen && tsdown --format esm,cjs --clean --dts",
+    "build": "pnpm run typegen && tsdown",
     "typegen": "tsx scripts/typegen.ts",
     "prepack": "pnpm run build",
     "watch": "tsdown --format esm,cjs --watch",
