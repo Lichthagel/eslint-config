@@ -56,7 +56,7 @@ importers:
         version: 0.14.5(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3)
       eslint-plugin-svelte:
         specifier: ^3.0.0
-        version: 3.13.0(eslint@9.39.1(jiti@2.6.1))(svelte@5.43.2)
+        version: 3.13.0(eslint@9.39.1(jiti@2.6.1))(svelte@5.43.3)
       eslint-plugin-tailwindcss:
         specifier: ^3.17.4
         version: 3.18.2(tailwindcss@3.4.18(tsx@4.20.6)(yaml@2.8.1))
@@ -74,7 +74,7 @@ importers:
         version: 16.2.6
       svelte:
         specifier: ^5.12.0
-        version: 5.43.2
+        version: 5.43.3
       tsdown:
         specifier: ^0.15.7
         version: 0.15.12(typescript@5.9.3)
@@ -383,10 +383,6 @@ packages:
 
   '@eslint/eslintrc@3.3.1':
     resolution: {integrity: sha512-gtF186CXhIl1p4pJNGZw8Yc6RlshoePRvE0X91oPGb3vZ8pM3qOS9W9NGPat9LziaBV7XrJWGylNQXkGcnM3IQ==}
-    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
-
-  '@eslint/js@9.39.0':
-    resolution: {integrity: sha512-BIhe0sW91JGPiaF1mOuPy5v8NflqfjIcDNpC+LbW9f609WVRX1rArrhi6Z2ymvrAry9jw+5POTj4t2t62o8Bmw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
   '@eslint/js@9.39.1':
@@ -2051,8 +2047,8 @@ packages:
       svelte:
         optional: true
 
-  svelte@5.43.2:
-    resolution: {integrity: sha512-ro1umEzX8rT5JpCmlf0PPv7ncD8MdVob9e18bhwqTKNoLjS8kDvhVpaoYVPc+qMwDAOfcwJtyY7ZFSDbOaNPgA==}
+  svelte@5.43.3:
+    resolution: {integrity: sha512-kjkAjCk41mJfvJZG56XcJNOdJSke94JxtcX8zFzzz2vrt47E0LnoBzU6azIZ1aBxJgUep8qegAkguSf1GjxLXQ==}
     engines: {node: '>=18'}
 
   tailwindcss@3.4.18:
@@ -2596,8 +2592,6 @@ snapshots:
       strip-json-comments: 3.1.1
     transitivePeerDependencies:
       - supports-color
-
-  '@eslint/js@9.39.0': {}
 
   '@eslint/js@9.39.1': {}
 
@@ -3368,7 +3362,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-svelte@3.13.0(eslint@9.39.1(jiti@2.6.1))(svelte@5.43.2):
+  eslint-plugin-svelte@3.13.0(eslint@9.39.1(jiti@2.6.1))(svelte@5.43.3):
     dependencies:
       '@eslint-community/eslint-utils': 4.9.0(eslint@9.39.1(jiti@2.6.1))
       '@jridgewell/sourcemap-codec': 1.5.5
@@ -3380,9 +3374,9 @@ snapshots:
       postcss-load-config: 3.1.4(postcss@8.5.6)
       postcss-safe-parser: 7.0.1(postcss@8.5.6)
       semver: 7.7.3
-      svelte-eslint-parser: 1.4.0(svelte@5.43.2)
+      svelte-eslint-parser: 1.4.0(svelte@5.43.3)
     optionalDependencies:
-      svelte: 5.43.2
+      svelte: 5.43.3
     transitivePeerDependencies:
       - ts-node
 
@@ -4183,7 +4177,7 @@ snapshots:
 
   supports-preserve-symlinks-flag@1.0.0: {}
 
-  svelte-eslint-parser@1.4.0(svelte@5.43.2):
+  svelte-eslint-parser@1.4.0(svelte@5.43.3):
     dependencies:
       eslint-scope: 8.4.0
       eslint-visitor-keys: 4.2.1
@@ -4192,9 +4186,9 @@ snapshots:
       postcss-scss: 4.0.9(postcss@8.5.6)
       postcss-selector-parser: 7.1.0
     optionalDependencies:
-      svelte: 5.43.2
+      svelte: 5.43.3
 
-  svelte@5.43.2:
+  svelte@5.43.3:
     dependencies:
       '@jridgewell/remapping': 2.3.5
       '@jridgewell/sourcemap-codec': 1.5.5
