@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.0.32](https://github.com/Lichthagel/eslint-config/compare/v1.0.31...v1.0.32) (2026-02-22)
+
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-perfectionist to v5 ([#663](https://github.com/Lichthagel/eslint-config/issues/663)) ([d5879ac](https://github.com/Lichthagel/eslint-config/commit/d5879acd6870bd95d9d7f78e4220c58b8cee5d87))
+* **deps:** update dependency eslint-plugin-unicorn to v62 ([#566](https://github.com/Lichthagel/eslint-config/issues/566)) ([e244a8e](https://github.com/Lichthagel/eslint-config/commit/e244a8e3a3aa0b2d241f278c5c93ea7372a40aef))
+* **deps:** update dependency eslint-plugin-unicorn to v63 ([#738](https://github.com/Lichthagel/eslint-config/issues/738)) ([81a460e](https://github.com/Lichthagel/eslint-config/commit/81a460e211041ead28b56fc1150d0d42e50cb884))
+* **deps:** update dependency globals to v17 ([#677](https://github.com/Lichthagel/eslint-config/issues/677)) ([2b9ba9c](https://github.com/Lichthagel/eslint-config/commit/2b9ba9cd9ec353d1f3b7a56bc51797383e12fdcb))
+* **deps:** update eslint monorepo to v10 ([#727](https://github.com/Lichthagel/eslint-config/issues/727)) ([f0a8dfa](https://github.com/Lichthagel/eslint-config/commit/f0a8dfa1eaae59f29504c3103c8238596a7e4bbe))
+
 ## [1.0.31](https://github.com/Lichthagel/eslint-config/compare/v1.0.30...v1.0.31) (2025-10-19)
 
 
