@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.33](https://github.com/Lichthagel/eslint-config/compare/v1.0.32...v1.0.33) (2026-04-04)
+
+
+### Bug Fixes
+
+* correct exports ([a0cc48d](https://github.com/Lichthagel/eslint-config/commit/a0cc48d580f51e0e0d398127ad254df0a585dbd2))
+
 ## [1.0.32](https://github.com/Lichthagel/eslint-config/compare/v1.0.31...v1.0.32) (2026-04-04)
 
 
