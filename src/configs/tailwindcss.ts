@@ -18,7 +18,7 @@ const tailwindcss = async (): Promise<FlatConfigItemStrict[]> => {
         "tailwindcss/no-unnecessary-arbitrary-value": "error",
       },
     },
-  ] satisfies FlatConfigItemStrict[] as FlatConfigItemStrict[];
+  ] satisfies FlatConfigItemStrict[];
 };
 
 export default tailwindcss;

@@ -24,7 +24,7 @@ const node = async (): Promise<FlatConfigItemStrict[]> => {
         "n/no-missing-require": "off",
       },
     },
-  ] satisfies FlatConfigItemStrict[] as FlatConfigItemStrict[];
+  ] satisfies FlatConfigItemStrict[];
 };
 
 export default node;
