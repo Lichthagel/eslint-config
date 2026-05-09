@@ -100,10 +100,5 @@
     "eslint-plugin-tailwindcss": {
       "optional": true
     }
-  },
-  "pnpm": {
-    "overrides": {
-      "@types/eslint": "npm:eslint@^10.0.0"
-    }
   }
 }
