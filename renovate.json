@@ -28,5 +28,6 @@
       ],
       "groupName": "linters-dev"
     }
-  ]
+  ],
+  "minimumReleaseAge": "1 day"
 }
