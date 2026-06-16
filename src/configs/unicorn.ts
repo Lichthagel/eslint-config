@@ -25,6 +25,7 @@ export default [
       "unicorn/no-null": "off",
       "unicorn/no-useless-undefined": ["error", { checkArguments: false }],
       "unicorn/prevent-abbreviations": "off",
+      "unicorn/comment-content": "off",
     },
   },
 ] satisfies FlatConfigItemStrict[] as FlatConfigItemStrict[];
