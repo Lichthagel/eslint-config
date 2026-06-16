@@ -13,7 +13,7 @@ const svelte = async (options: SvelteOptions = {}): Promise<FlatConfigItemStrict
     withTypescript = false,
   } = options;
 
-  const pluginSvelte = await import("eslint-plugin-svelte").then((mod) => mod.default);
+  const { default: pluginSvelte } = await import("eslint-plugin-svelte");
 
   const configs: FlatConfigItemStrict[] = [
     ...(pluginSvelte.configs["flat/recommended"] as FlatConfigItemStrict[]).map((configItem) => ({
@@ -93,12 +93,11 @@ const svelte = async (options: SvelteOptions = {}): Promise<FlatConfigItemStrict
         "svelte/valid-each-key": "error",
         ...(
           disableStylistic
-            ? {
-                "@stylistic/indent": "off", // superseded by svelte/indent
-                "@stylistic/indent-binary-ops": "off", // superseded by svelte/indent
-                "@stylistic/no-trailing-spaces": "off", // superseded by svelte/no-trailing-spaces
-              }
-            : {}
+          && {
+            "@stylistic/indent": "off", // superseded by svelte/indent
+            "@stylistic/indent-binary-ops": "off", // superseded by svelte/indent
+            "@stylistic/no-trailing-spaces": "off", // superseded by svelte/no-trailing-spaces
+          }
         ),
       },
     },

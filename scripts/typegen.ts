@@ -1,3 +1,4 @@
+/* eslint-disable unicorn/prefer-await */
 import type { ESLint, Linter } from "eslint";
 
 import { pluginsToRulesDTS } from "eslint-typegen/core";
@@ -25,7 +26,7 @@ const reduceConfigToPlugins = (config: Linter.Config | Linter.Config[]): { [key:
 
 const plugins: { [key: string]: ESLint.Plugin } = {
   "": {
-    rules: Object.fromEntries(builtinRules.entries()),
+    rules: Object.fromEntries(builtinRules),
   },
   ...reduceConfigToPlugins(await import("eslint-plugin-perfectionist").then((mod) => mod.default.configs["recommended-natural"] as Linter.Config[])),
   ...reduceConfigToPlugins(await import("eslint-plugin-n").then((mod) => mod.default.configs["flat/recommended-module"] as Linter.Config[])),

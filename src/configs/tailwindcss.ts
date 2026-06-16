@@ -1,7 +1,7 @@
 import type { FlatConfigItemStrict } from "../types";
 
 const tailwindcss = async (): Promise<FlatConfigItemStrict[]> => {
-  const pluginTailwind = await import("eslint-plugin-tailwindcss").then((mod) => mod.default);
+  const { default: pluginTailwind } = await import("eslint-plugin-tailwindcss");
 
   return [
     ...(pluginTailwind.configs["flat/recommended"].map((config) => ({

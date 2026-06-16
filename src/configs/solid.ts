@@ -11,7 +11,7 @@ const solid = async (options: SolidOptions = {}): Promise<FlatConfigItemStrict[]
     withTypescript = false,
   } = options;
 
-  const configSolid = await import("eslint-plugin-solid/configs/recommended").then((mod) => mod.default as unknown as Linter.Config);
+  const { default: configSolid } = await import("eslint-plugin-solid/configs/recommended") as unknown as { default: Linter.Config };
 
   return [
     {
