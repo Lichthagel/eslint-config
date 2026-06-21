@@ -1,10 +1,12 @@
+import type { Linter } from "eslint";
+
 import type { FlatConfigItemStrict } from "../types";
 
 const tailwindcss = async (): Promise<FlatConfigItemStrict[]> => {
   const { default: pluginTailwind } = await import("eslint-plugin-tailwindcss");
 
   return [
-    ...(pluginTailwind.configs["flat/recommended"].map((config) => ({
+    ...((pluginTailwind.configs.recommended as Linter.Config[]).map((config) => ({
       ...config,
       name: config.name?.replaceAll(":", "/"),
     }))),
