@@ -5,11 +5,13 @@ import type { FlatConfigItemStrict } from "../types";
 const tailwindcss = async (): Promise<FlatConfigItemStrict[]> => {
   const { default: pluginTailwind } = await import("eslint-plugin-tailwindcss");
 
+  const recommendedConfig = pluginTailwind.configs.recommended as Linter.Config;
+
   return [
-    ...((pluginTailwind.configs.recommended as Linter.Config[]).map((config) => ({
-      ...config,
-      name: config.name?.replaceAll(":", "/"),
-    }))),
+    ({
+      ...recommendedConfig,
+      name: recommendedConfig.name?.replaceAll(":", "/"),
+    }),
     {
       name: "lichthagel/tailwindcss",
       rules: {
