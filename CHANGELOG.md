@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.38](https://github.com/Lichthagel/eslint-config/compare/v1.0.37...v1.0.38) (2026-06-21)
+
+
+### Configuration Changes
+
+* **unicorn:** disable unicorn/no-computed-property-existence-check ([2f72a5c](https://github.com/Lichthagel/eslint-config/commit/2f72a5cdadd16ff83293e4f7e3a9df78467a4e98))
+
 ## [1.0.37](https://github.com/Lichthagel/eslint-config/compare/v1.0.36...v1.0.37) (2026-06-21)
 
 
