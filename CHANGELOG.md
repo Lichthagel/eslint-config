@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.37](https://github.com/Lichthagel/eslint-config/compare/v1.0.36...v1.0.37) (2026-06-21)
+
+
+### Configuration Changes
+
+* **unicorn:** disable unicorn/no-top-level-assignment-in-function ([fd57695](https://github.com/Lichthagel/eslint-config/commit/fd576958d50c3519cb20461f8706ef1406198796))
+
 ## [1.0.36](https://github.com/Lichthagel/eslint-config/compare/v1.0.35...v1.0.36) (2026-06-20)
 
 
