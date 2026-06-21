@@ -28,6 +28,7 @@ export default [
       "unicorn/comment-content": "off",
       "unicorn/consistent-boolean-name": "off",
       "unicorn/name-replacements": "off",
+      "unicorn/no-top-level-assignment-in-function": "off",
     },
   },
 ] satisfies FlatConfigItemStrict[] as FlatConfigItemStrict[];
