@@ -59,7 +59,7 @@ importers:
         version: 3.19.0(eslint@10.5.0(jiti@2.7.0))(svelte@5.56.3(@typescript-eslint/types@8.61.1))
       eslint-plugin-tailwindcss:
         specifier: ^4.0.0
-        version: 4.0.2(eslint@10.5.0(jiti@2.7.0))(tailwindcss@4.3.1)(typescript@6.0.3)
+        version: 4.0.3(eslint@10.5.0(jiti@2.7.0))(tailwindcss@4.3.1)(typescript@6.0.3)
       eslint-typegen:
         specifier: ^2.0.0
         version: 2.3.1(eslint@10.5.0(jiti@2.7.0))
@@ -1109,8 +1109,8 @@ packages:
       svelte:
         optional: true
 
-  eslint-plugin-tailwindcss@4.0.2:
-    resolution: {integrity: sha512-I/plNAFclmxJUUzKhQ6W2sMYcfxMMYLcslVFzRwtoIaheLOvKoVluTOxx67aX0H234gAlKW5VuK0fOVWgPFkqQ==}
+  eslint-plugin-tailwindcss@4.0.3:
+    resolution: {integrity: sha512-JSirGfeufS4m6PDV+pflwOPqU3CG3y39xRt5JhRjPrbRagjFbbTcyEjfiClU6aWTQ18HFhMItiBTUWqbjrGoOg==}
     engines: {node: '>=20.19.0'}
     peerDependencies:
       tailwindcss: ^4.0.0
@@ -3001,7 +3001,7 @@ snapshots:
     transitivePeerDependencies:
       - ts-node
 
-  eslint-plugin-tailwindcss@4.0.2(eslint@10.5.0(jiti@2.7.0))(tailwindcss@4.3.1)(typescript@6.0.3):
+  eslint-plugin-tailwindcss@4.0.3(eslint@10.5.0(jiti@2.7.0))(tailwindcss@4.3.1)(typescript@6.0.3):
     dependencies:
       '@typescript-eslint/utils': 8.61.1(eslint@10.5.0(jiti@2.7.0))(typescript@6.0.3)
       postcss: 8.5.15
