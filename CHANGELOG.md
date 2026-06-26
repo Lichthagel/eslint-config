@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.39](https://github.com/Lichthagel/eslint-config/compare/v1.0.38...v1.0.39) (2026-06-26)
+
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-unicorn to v69 ([#989](https://github.com/Lichthagel/eslint-config/issues/989)) ([1df7645](https://github.com/Lichthagel/eslint-config/commit/1df764510ed594d4b362ddda0df6cb32652dbd8a))
+
 ## [1.0.38](https://github.com/Lichthagel/eslint-config/compare/v1.0.37...v1.0.38) (2026-06-21)
 
 
