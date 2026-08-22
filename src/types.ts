@@ -37,11 +37,11 @@ export type OptionsConfig = {
   node?: boolean;
 
   /**
-   * Enable solid-specific rules.
+   * Enable solid-specific rules, optionally targeting Solid 2.
    *
    * @default false
    */
-  solid?: boolean;
+  solid?: "v2" | boolean;
 
   /**
    * Enable stylistic rules.

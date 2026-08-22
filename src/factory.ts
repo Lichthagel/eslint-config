@@ -45,7 +45,10 @@ const lichthagel = async (
   }
 
   if (solid) {
-    config.push(...(await configs.solid({ withTypescript: typescript })));
+    config.push(...(await configs.solid({
+      version: solid === "v2" ? 2 : undefined,
+      withTypescript: typescript,
+    })));
   }
 
   if (svelte) {
