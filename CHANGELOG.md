@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.1.0](https://github.com/Lichthagel/eslint-config/compare/v1.0.43...v1.1.0) (2026-09-04)
+
+
+### Features
+
+* **solid:** support v2 ([#1084](https://github.com/Lichthagel/eslint-config/issues/1084)) ([799f014](https://github.com/Lichthagel/eslint-config/commit/799f0148d9706b7de9c9508b02ccf34fb503a42b))
+
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-unicorn to v74 ([#1094](https://github.com/Lichthagel/eslint-config/issues/1094)) ([693086c](https://github.com/Lichthagel/eslint-config/commit/693086c563a917f0e14819d3eb81e06ce2454c44))
+
 ## [1.0.43](https://github.com/Lichthagel/eslint-config/compare/v1.0.42...v1.0.43) (2026-08-05)
 
 
