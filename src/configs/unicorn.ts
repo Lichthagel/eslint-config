@@ -4,8 +4,8 @@ import type { FlatConfigItemStrict } from "../types";
 
 export default [
   {
-    name: "unicorn/flat/recommended",
-    ...unicornPlugin.configs["flat/recommended"],
+    name: "unicorn/recommended",
+    ...unicornPlugin.configs.recommended,
   },
   {
     name: "lichthagel/unicorn",
