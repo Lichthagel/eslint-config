@@ -2,6 +2,7 @@ import stylistic from "@stylistic/eslint-plugin";
 
 import type { FlatConfigItemStrict } from "../types";
 
+// eslint-disable-next-line unicorn/no-top-level-side-effects
 export default [
   {
     name: "stylistic/custom",

@@ -4,8 +4,8 @@ import type { FlatConfigItemStrict } from "../types";
 
 export default [
   {
-    name: "unicorn/flat/recommended",
-    ...unicornPlugin.configs["flat/recommended"],
+    name: "unicorn/recommended",
+    ...unicornPlugin.configs.recommended,
   },
   {
     name: "lichthagel/unicorn",
@@ -30,6 +30,15 @@ export default [
       "unicorn/name-replacements": "off",
       "unicorn/no-top-level-assignment-in-function": "off",
       "unicorn/no-computed-property-existence-check": "off",
+      "unicorn/no-top-level-side-effects": [
+        "error",
+        {
+          allow: {
+            "@lichthagel/eslint-config": ["lichthagel"],
+            "tsdown": ["defineConfig"],
+          },
+        },
+      ],
     },
   },
 ] satisfies FlatConfigItemStrict[] as FlatConfigItemStrict[];
