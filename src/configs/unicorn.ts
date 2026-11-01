@@ -36,6 +36,13 @@ export default [
           allow: {
             "@lichthagel/eslint-config": ["lichthagel"],
             "tsdown": ["defineConfig"],
+            "astro/config": ["defineConfig"],
+            "unocss": [
+              "defineConfig",
+              "presetTypography",
+              "presetWind3",
+              "transformerDirectives",
+            ],
           },
         },
       ],
