@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.2](https://github.com/Lichthagel/eslint-config/compare/v1.1.1...v1.1.2) (2026-11-01)
+
+
+### Bug Fixes
+
+* **unicorn:** add ignores to no-top-level-side-effects ([e84bf17](https://github.com/Lichthagel/eslint-config/commit/e84bf17e4964120be55a3dad977b2b61d2941a15))
+
 ## [1.1.1](https://github.com/Lichthagel/eslint-config/compare/v1.1.0...v1.1.1) (2026-10-31)
 
 
