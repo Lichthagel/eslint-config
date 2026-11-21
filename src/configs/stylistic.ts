@@ -20,12 +20,18 @@ export default [
     name: "lichthagel/stylistic",
     rules: {
       // JavaScript
-      "@stylistic/array-bracket-newline": ["error", { minItems: 4, multiline: true }],
-      "@stylistic/array-element-newline": ["error", { minItems: 4, multiline: true }],
+      "@stylistic/list-style": [
+        "error",
+        {
+          overrides: {
+            "()": { multiLine: { minItems: 0 } },
+            "[]": { singleLine: { maxItems: 3 } },
+            "{}": { singleLine: { maxItems: 3 } },
+          },
+        },
+      ],
       "@stylistic/curly-newline": ["error", { consistent: true }],
-      "@stylistic/function-call-argument-newline": ["error", "consistent"],
       "@stylistic/function-call-spacing": ["error", "never"],
-      "@stylistic/function-paren-newline": ["error", "multiline-arguments"],
       "@stylistic/generator-star-spacing": ["error", { after: false, before: true }],
       "@stylistic/implicit-arrow-linebreak": ["off", "beside"],
       "@stylistic/lines-around-comment": [
@@ -50,8 +56,6 @@ export default [
       "@stylistic/no-extra-semi": "error",
       "@stylistic/no-multi-spaces": "error",
       "@stylistic/nonblock-statement-body-position": ["error", "beside"],
-      "@stylistic/object-curly-newline": ["error", { consistent: true, minProperties: 4, multiline: true }],
-      "@stylistic/object-property-newline": ["error", { allowAllPropertiesOnSameLine: true }],
       "@stylistic/one-var-declaration-per-line": ["error", "always"],
       "@stylistic/operator-linebreak": ["error", "before"],
       "@stylistic/semi-style": ["error", "last"],

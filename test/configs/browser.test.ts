@@ -1,6 +1,9 @@
 import globals from "globals";
 import {
-  assert, describe, expect, test,
+  assert,
+  describe,
+  expect,
+  test,
 } from "vitest";
 
 import { processConfig, testNotHasGlobal } from "./utils";
@@ -12,7 +15,10 @@ describe("browser enabled", async () => {
 
   test("has browser globals", () => {
     expect(res.languageOptions?.globals).toMatchObject({
-      ...globals.browser, document: "readonly", navigator: "readonly", window: "readonly",
+      ...globals.browser,
+      document: "readonly",
+      navigator: "readonly",
+      window: "readonly",
     });
   });
 });

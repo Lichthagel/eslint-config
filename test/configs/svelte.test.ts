@@ -1,13 +1,20 @@
 import type { RuleConfig } from "@commitlint/types";
 
 import {
-  assert, describe, expect, test,
+  assert,
+  describe,
+  expect,
+  test,
 } from "vitest";
 
 import type { RuleOptions } from "../../src/typegen";
 
 import {
-  processConfig, testEnablesPlugin, testHandlesFile, testNotEnablesPlugin, testNotHandlesFile,
+  processConfig,
+  testEnablesPlugin,
+  testHandlesFile,
+  testNotEnablesPlugin,
+  testNotHandlesFile,
   testRuleDisabled,
   testRuleEnabled,
   testRuleUndefined,

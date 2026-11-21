@@ -1,7 +1,11 @@
 import { assert, describe } from "vitest";
 
 import {
-  processConfig, testEnablesPlugin, testNotEnablesPlugin, testRuleEnabled, testRuleUndefined,
+  processConfig,
+  testEnablesPlugin,
+  testNotEnablesPlugin,
+  testRuleEnabled,
+  testRuleUndefined,
 } from "./utils";
 
 describe("tailwindcss enabled", async () => {

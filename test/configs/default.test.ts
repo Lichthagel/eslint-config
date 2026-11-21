@@ -1,10 +1,14 @@
 import globals from "globals";
 import {
-  assert, describe, expect, test,
+  assert,
+  describe,
+  expect,
+  test,
 } from "vitest";
 
 import {
-  processConfig, testEnablesPlugin,
+  processConfig,
+  testEnablesPlugin,
   testRuleDisabled,
   testRuleEnabled,
 } from "./utils";
