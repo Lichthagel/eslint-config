@@ -1,11 +1,15 @@
 import {
-  assert, describe,
+  assert,
+  describe,
   expect,
   test,
 } from "vitest";
 
 import {
-  processConfig, testEnablesPlugin, testHandlesFile, testNotEnablesPlugin,
+  processConfig,
+  testEnablesPlugin,
+  testHandlesFile,
+  testNotEnablesPlugin,
   testRuleEnabled,
   testRuleUndefined,
 } from "./utils";

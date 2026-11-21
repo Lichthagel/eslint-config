@@ -4,7 +4,6 @@ import ts from "typescript-eslint";
 
 import lichthagel, { type FlatConfigItem } from "./dist/index.mjs";
 
-// eslint-disable-next-line unicorn/no-top-level-side-effects
 export default [
   ...(await lichthagel({
     node: true,
