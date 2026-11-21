@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.3](https://github.com/Lichthagel/eslint-config/compare/v1.1.2...v1.1.3) (2026-11-21)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @stylistic/eslint-plugin to v6 ([#1206](https://github.com/Lichthagel/eslint-config/issues/1206)) ([dc67734](https://github.com/Lichthagel/eslint-config/commit/dc677340bcf96e8c4c50d9a4cbda216954630a34))
+* **deps:** update dependency eslint-plugin-unicorn to v80 ([#1210](https://github.com/Lichthagel/eslint-config/issues/1210)) ([f780773](https://github.com/Lichthagel/eslint-config/commit/f7807730bbaa0c838c297a302409abbbc5461ade))
+
 ## [1.1.2](https://github.com/Lichthagel/eslint-config/compare/v1.1.1...v1.1.2) (2026-11-01)
 
 
